@@ -112,6 +112,18 @@ body {
 
 .nav__item {
     margin: 0;
+    cursor: pointer;
+}
+
+.nav__link:focus {
+    outline: none;
+    border-color: #0066cc;
+    background: #e6f3ff;
+}
+
+.nav-link[aria-current="page"] {
+            background: #0066cc;
+            color: white;
 }
 
 .nav__link {
@@ -412,6 +424,13 @@ body {
     flex-direction: column;
 }
 
+.contacts__header {
+    text-align: center;
+    color: var(--color-light);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
 .contacts__title {
     color: var(--color-main);
     margin-bottom: var(--space-md);
@@ -639,11 +658,30 @@ dialog {
     color: white;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
     background: var(--primary-dark);
 }
+
+
 
 .btn-secondary {
     background: #f8f9fa;
@@ -653,6 +691,30 @@ dialog {
 
 .btn-secondary:hover {
     background: #e9ecef;
+}
+
+.btn-secondary:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.3);
+}
+
+input:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.3);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.3);
+}
+
+select:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.3);
 }
 
 .required {
