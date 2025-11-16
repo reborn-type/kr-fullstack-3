@@ -47,7 +47,11 @@
                     <section class="hero">
                         <div class="hero__content">
                             <div class="hero__image">
-                                <img src="../images/photo.jpg" alt="Фото студента" class="hero__photo">
+                                <picture>
+                                    <source srcset="../images/photo.webp" type="image/webp">
+                                    <source srcset="../images/photo.jpg" type="image/jpeg">
+                                    <img src="../images/photo.jpg" alt="Фото студента" loading='lazy' class="hero__photo responsive-image">
+                                </picture>
                             </div>
                             <div class="hero__info">
                                 <h2 class="hero__greeting">Привет! Я студент РТУ МИРЭА!</h2>
@@ -125,6 +129,55 @@
                         </article>
                     </div>
                 </section>
+
+
+                <section class="project-preview">
+                    <h2 class="section__title">Лучшие проекты: </h2>
+                        <div class="projects-preview__grid">
+                            <article class="project-card">
+                                <div class="project-card__image">
+                                    <picture>
+                                        <source srcset="../images/pic1_projects.webp" type="image/webp">
+                                        <source srcset="../images/pic1_projects.jpg" type="image/jpeg">
+                                        <img src="../images/pic1_projects.jpg" alt="Тематичное фото" loading='lazy'>
+                                    </picture>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">LongLang</h3>
+                                    <p class="project-card__description">
+                                        Приложения для изучения иностранных слов
+                                    </p>
+                                    <div class="project-card__tags">
+                                        <span class="tag">C++</span>
+                                        <span class="tag">QTcreator</span>
+                                        <span class="tag">CSS</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="project-card">
+                                <div class="project-card__image">
+                                    <picture>
+                                        <source srcset="../images/pic2_projects.webp" type="image/webp">
+                                        <source srcset="../images/pic2_projects.jpg" type="image/jpeg">
+                                        <img src="../images/pic2_projects.jpg" alt="Тематичное фото" loading='lazy'>
+                                    </picture>
+                                </div>
+                                <div class="project-card__content">
+                                    <h3 class="project-card__title">Личный сайт</h3>
+                                    <p class="project-card__description">
+                                        Сайт для размещения своих навыков и опыта
+                                    </p>
+                                    <div class="project-card__tags">
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">CSS</span>
+                                        <span class="tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                </section>
+
+
             </main>
 
             <footer class="footer">
