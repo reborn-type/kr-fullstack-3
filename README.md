@@ -5,4 +5,4 @@
 В практике содержаться результаты работы с адаптивной версткой, адаптивом изображений, реализованно A11y-аудит и обеспечение, а также проверенны параметры по lighthouse. 
 
 ## Ссылки ## 
-[Ссылка на Pages](https://reborn-type.github.io/kr_fullstack_3/)
+[Ссылка на Pages](https://reborn-type.github.io/kr-fullstack-3/)
